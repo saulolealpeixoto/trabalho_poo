@@ -1,0 +1,51 @@
+1.(1,25) Considerando os conceitos básicos de Orientação a Objetos, explique o significado dos conceitos abaixo
+
+A) Encapsulamento:
+
+       É quando se restringe o acesso aos dados , e se cria uma estrutura com métodos, que serão utilizados por outras classes  sem interferir/acessar o conteúdo que foi restringido mas fazendo o uso de suas funções 
+
+B) Herança:
+
+       É quando à partir de uma classe já existente é criado outra que herdara as funções com algumas coisas a mais , por exemplo uma classe  A tem funções de adicionar , a classe B herdará essa função, mas vai ter um remover ou seja uma funcionalidade a mais 
+
+C) Polimorfismo:
+
+       Quando duas ou mais classe derivadas de uma super classe podem usar métodos como a mesma assinatura, mas com comportamentos destintos  
+
+D) Atributos e Métodos:
+
+Atributos : Os atributos são as propriedades de um objeto, também são conhecidos como variáveis
+
+      métodos : determinam o comportamento dos objetos de uma classe e são análogos a funções ou procedimentos da programação estruturada
+
+E )Atributos e Métodos Estáticos
+
+      Métodos Estático  determinam o comportamento dos objetos de uma classe e são análogos a funções ou procedimentos da programação estruturada
+
+      Atributos estáticos são os mesmos para todos os objetos, eles são compartilhados. Uma mudança em um destes **atributos** é visível por todos os objetos instanciados
+
+2   (0,75) Diferencia os mecanismos de sobrecarga e sobrescrita, demonstrando cenário de uso de cada um desses.
+
+Com a **sobrescrita** conseguimos especializar os métodos herdados das superclasses, alterando o seu comportamento nas subclasses por um mais específico.
+
+exemplos de sobrecarga:
+
+java
+@overaide
+public String toString(){
+        return this.sobrenome+this.cpf;
+   }
+
+
+A **sobrecarga**  consiste em permitir, dentro da mesma classe, mais de um método com o mesmo nome. Entretanto, eles necessariamente devem possuir argumentos diferentes para funcionar.
+
+exemplo sobrecarga
+public Pessoa(String nome, String sobrenome, int idade) {
+		this.idade = idade;
+		this.nome = nome;
+		this.sobrenome = sobrenome;
+	}
+	public Pessoa(String nome,  int idade) {
+		this.idade = idade;
+		this.nome = nome;
+	}
